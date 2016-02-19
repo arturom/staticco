@@ -13,9 +13,8 @@ $ php ./app.php --dir="dirname" [options]
 Options
   --recursive       Navigates through the directory recursively
   --follow_links    Follows symbolic links
-  --extension="php" Filters the files analyzed to those matching this extension.
-                    Multiple `--extension` flags are supported.
-  --
+  --extension="php" Filters the files analyzed to those matching this extension
+                    Multiple `--extension` flags are supported
 ```
 
 ### Usage examples
