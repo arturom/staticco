@@ -1,5 +1,5 @@
 # staticco
-A PHP static code analyzer based on the [PHP-Parser](https://github.com/nikic/PHP-Parser/).
+A PHP static code analyzer based on the fantastic [PHP-Parser](https://github.com/nikic/PHP-Parser/) library.
 
 ### Features
  - Find the classes declared in a PHP file.
