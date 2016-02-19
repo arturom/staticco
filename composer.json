@@ -1,9 +1,7 @@
 {
     "name": "arturom/staticco",
     "require": {
-        "nikic/php-parser": "^1.4",
-        "pda/pheanstalk": "^3.1",
-        "brightzone/gremlin-php": "^2.2"
+        "nikic/php-parser": "^1.4"
     },
     "autoload": {
         "psr-4": {
@@ -13,7 +11,7 @@
     "authors": [
         {
             "name": "Arturo Mejia",
-            "email": "arturo.mejia@kreatetechnology.com"
+            "email": "arturo.mejia@creativedrive.com"
         }
     ]
 }
