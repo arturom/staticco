@@ -9,6 +9,7 @@ $pretty_printer = new PhpParser\PrettyPrinter\Standard;
 
 $traverser->addVisitor(new PhpParser\NodeVisitor\NameResolver);
 $traverser->addVisitor(new Staticco\NodeVisitor\Debugger);
+$traverser->addVisitor(new Staticco\NodeVisitor\CakeImportFinder);
 
 $worker = new Staticco\Worker($parser, $traverser, $pretty_printer);
 

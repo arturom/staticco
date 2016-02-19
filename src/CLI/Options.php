@@ -40,11 +40,6 @@ class Options
     public $recursive = false;
 
     /**
-     * @var int
-     */
-    public $concurrency = 1;
-
-    /**
      * createFromArgsList
      *
      * @return self
@@ -71,7 +66,6 @@ class Options
             'follow_links',
             'extension:',
             'recursive',
-            'concurrency:',
         );
     }
 
@@ -118,13 +112,6 @@ class Options
                 (array)$opts['extension'],
                 true
             );
-        }
-
-        if (isset($opts['concurrency'])) {
-            $this->concurrency = filter_var($opts['concurrency'], FILTER_VALIDATE_INT);
-            if($this->concurrency === false) {
-                throw new UnexpectedValueException('Unexepected value for concurrency option');
-            }
         }
     }
 }
