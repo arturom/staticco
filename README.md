@@ -26,3 +26,34 @@ $ php ./app.php --file="home/root/my_project_dir/web/index.php"
 
 ### To do
 Support for injecting custom traversers via command-line arguments
+
+
+### Sample output
+```bash
+$ php ./app.php --file /root/app/base_model.php
+file: /root/app/base_model.php
+
+Declared Classes
+  line | name
+     3 | RealtimeModel
+
+Referenced names
+  line | name
+     3 | Model
+    13 | ClassRegistry
+    15 | ClassRegistry
+    16 | ClassRegistry
+    22 | ClassRegistry
+   127 | Exception
+   355 | ClassRegistry
+   360 | Redisent
+   360 | Configure
+   360 | Configure
+   361 | ClassRegistry
+
+Cake imports
+  line | name
+    22 | ClassRegistry:init($modelClassName)
+   132 | $this:loadModel($modelName)
+   165 | $this:loadModel($hasManyModelName)
+```
