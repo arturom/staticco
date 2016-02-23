@@ -35,7 +35,7 @@ file: /root/app/base_model.php
 
 Declared Classes
   line | name
-     3 | RealtimeModel
+     3 | BaseModel
 
 Referenced names
   line | name
