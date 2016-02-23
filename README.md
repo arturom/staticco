@@ -5,6 +5,13 @@ A PHP static code analyzer based on the fantastic [PHP-Parser](https://github.co
  - Find the classes declared in a PHP file.
  - Find the classes that this PHP file depends on.
 
+### Initial steps
+```bash
+$ git clone https://github.com/arturom/staticco.git
+$ cd staticco
+$ composer install
+```
+
 ### Usage:
 ```bash
 $ php ./app.php --file="filename"
